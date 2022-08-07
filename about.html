@@ -28,14 +28,13 @@
         --box-color: #fcefef;
         --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
       }
-
-        .hero{
-            background-color: var(--box-color);
-            padding-top: 80px;
-            padding-bottom: 80px;
-        }
+      .hero {
+        background-color: var(--box-color);
+        padding-top: 50px;
+        padding-bottom: 40px;
+      }
       body {
-        margin: 0;
+        margin: 50;
       }
 
       .navbar {
@@ -64,22 +63,36 @@
         font-family: var(--title-font) !important;
         color: var(--primary-color);
       }
-
       img {
         max-width: 100%;
         max-height: 100%;
-      }
-      .row {
         height: 400px;
         width: 420px;
+        display: block;
       }
-
+      p {
+        text-align: left;
+        font-family: var(--text-font);
+        font-size: 20px;
+      }
       @media (max-width: 900px) {
+        .hero {
+          padding-top: 30px;
+          padding-bottom: 5px;
+        }
+        h1 {
+          font-size: 48px;
+        }
+
         .navbar-brand {
           font-size: 15px;
         }
         .nav-item {
           font-size: 12px;
+        }
+        p {
+          margin-top: 50px;
+          font-size: 15px;
         }
       }
     </style>
@@ -107,25 +120,27 @@
       </div>
     </nav>
     <div class="hero">
-    <h1 class="text-center mt-2 mb-2">About Me</h1>
-    
-    <div class="text-center row mt-5 mb-5" id="propic">
-      <img
-        src="esther.jpg"
-        class="image-fluid d-sm-block"
-        alt="profile picture"
-      />
+      <h1 class="text-center mt-2 mb-5">About Me</h1>
     </div>
-</div>
-    </body>
-    <div class="about-content">
-      <p>
-        Hi! I'm Esther Mak. An aspiring frontend developer and designer from
-        Hong Kong, currently doing a Master's degree in Interaction Design in
-        Estonia.<br />Before pivoting my career in the tech field, I worked in
-        NGOs and government organization as event organizer and social media
-        manager.
-      </p>
+    <div class="container text-center mt-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <img
+            src="esther.jpg"
+            class="image-fluid mx-auto d-lg-block"
+            alt="profile picture"
+          />
+        </div>
+        <div class="col-lg-6">
+          <p>
+            Hi! I'm Esther Mak. An aspiring frontend developer and designer from
+            Hong Kong, currently doing a Master's degree in Interaction Design
+            in Estonia.<br /><br />Before pivoting my career in the tech field,
+            I worked in NGOs and government organization as event organizer and
+            social media manager.
+          </p>
+        </div>
+      </div>
     </div>
 
     <script
