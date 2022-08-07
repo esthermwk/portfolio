@@ -33,9 +33,6 @@
         padding-top: 50px;
         padding-bottom: 40px;
       }
-      body {
-        margin: 50;
-      }
 
       .navbar {
         color: var(--box-color) !important;
@@ -97,6 +94,16 @@
         color: var(--secondary-color);
         background: white;
       }
+
+      .technology {
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+
+      .technology img {
+        max-width: 70%;
+      }
+
       @media (max-width: 900px) {
         .hero {
           padding-top: 30px;
@@ -112,16 +119,23 @@
         .nav-item {
           font-size: 12px;
         }
-
+        .technology img {
+          max-width: 120%;
+        }
         img {
           max-width: 100%;
           max-height: 100%;
-          height: 300px;
-          width: 300px;
+          height: 200px;
+          width: 200px;
           display: block;
         }
-        p {
+
+        .about-me {
           margin-top: 50px;
+          font-size: 15px;
+        }
+        p {
+          margin-top: 20px;
           font-size: 15px;
         }
       }
@@ -153,7 +167,7 @@
       <h1 class="text-center mt-2 mb-5">About Me</h1>
     </div>
     <div class="container text-center mt-5">
-      <div class="row mb-5">
+      <div class="row mb-3">
         <div class="col-lg-6">
           <img
             src="esther.jpg"
@@ -162,13 +176,13 @@
           />
         </div>
         <div class="col-lg-6">
-          <p>
+          <p class="about-me">
             Hi! I'm Esther, an aspiring frontend developer and designer from
             Hong Kong, currently doing a Master's degree in Interaction Design
             in Estonia.<br /><br />Before pivoting my career to the tech field,
             I worked in NGOs and government organization as project coordinator
             and social media manager.<br /><br />From event planning to web
-            design, my philosophy is the same - human-centre. I believe that
+            design, my philosophy is the same - be human-centred. I believe that
             good design not only can improve people's lives, but also bringing
             users' a particular emotion, idea, or memory in their mind.<br /><br />When
             I'm not coding, I'm on the way to cinema / theatre / library / gym
@@ -186,88 +200,94 @@
         </div>
       </div>
     </div>
-    <h2 class="text-center mt-5">Languages</h2>
+    <h2 class="text-center">Languages</h2>
     <p class="text-center">Cantonese, Chinese, English, Japanese, German</p>
     <h2 class="text-center mt-5">Skills</h2>
     <p class="text-center">
       Interaction Design, User Experience Design, User Interface Design,
       Prototyping, Wireframe, Responsive Web Design
     </p>
-    <h2 class="text-center mt-5 mb-4">Technologies learnt</h2>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="row">
-          <div class="col-2">
-            <img src="/icon/html.png" alt="HTML logo" class="img-fluid mb-3" />
-          </div>
-          <div class="col-2">
-            <img src="/icon/css.png" alt="CSS logo" class="img-fluid mb-3" />
-          </div>
-          <div class="col-2">
-            <img
-              src="/icon/javascript.png"
-              alt="JS logo"
-              class="img-fluid mb-3"
-            />
-          </div>
-          <div class="col-2">
-            <img
-              src="/icon/editor.png"
-              alt="VS Code logo"
-              class="img-fluid mb-3"
-            />
-          </div>
-          <div class="col-2">
-            <img src="/icon/api.png" alt="API logo" class="img-fluid mb-3" />
-          </div>
-          <div class="col-2">
-            <img
-              src="/icon/github.png"
-              alt="Github logo"
-              class="img-fluid mb-3"
-            />
+    <h2 class="text-center mt-5 mb-3">Technologies learnt</h2>
+    <div class="technology">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-2">
+              <img
+                src="/icon/html.png"
+                alt="HTML logo"
+                class="img-fluid mb-3"
+              />
+            </div>
+            <div class="col-2">
+              <img src="/icon/css.png" alt="CSS logo" class="img-fluid mb-3" />
+            </div>
+            <div class="col-2">
+              <img
+                src="/icon/javascript.png"
+                alt="JS logo"
+                class="img-fluid mb-3"
+              />
+            </div>
+            <div class="col-2">
+              <img
+                src="/icon/editor.png"
+                alt="VS Code logo"
+                class="img-fluid mb-3"
+              />
+            </div>
+            <div class="col-2">
+              <img src="/icon/api.png" alt="API logo" class="img-fluid mb-3" />
+            </div>
+            <div class="col-2">
+              <img
+                src="/icon/github.png"
+                alt="Github logo"
+                class="img-fluid mb-3"
+              />
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="row">
-          <div class="col-2">
-            <img
-              src="/icon/bootstrap.png"
-              alt="Bootstrap logo"
-              class="img-fluid mb-3"
-            />
-          </div>
-          <div class="col-2">
-            <img
-              src="/icon/hosting.png"
-              alt="Hosting logo"
-              class="img-fluid mb-3"
-            />
-          </div>
-          <div class="col-2">
-            <img
-              src="/icon/react.png"
-              alt="React logo"
-              class="img-fluid mb-3"
-            />
-          </div>
-          <div class="col-2">
-            <img
-              src="/icon/flexbox.png"
-              alt="Flexbox logo"
-              class="img-fluid mb-3"
-            />
-          </div>
-          <div class="col-2">
-            <img src="/icon/seo.png" alt="SEO logo" class="img-fluid mb-3" />
-          </div>
-          <div class="col-2">
-            <img
-              src="/icon/responsive.png"
-              alt="Responsive logo"
-              class="img-fluid mb-3"
-            />
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-2">
+              <img
+                src="/icon/bootstrap.png"
+                alt="Bootstrap logo"
+                class="img-fluid mb-3"
+              />
+            </div>
+            <div class="col-2">
+              <img
+                src="/icon/hosting.png"
+                alt="Hosting logo"
+                class="img-fluid mb-3"
+              />
+            </div>
+            <div class="col-2">
+              <img
+                src="/icon/react.png"
+                alt="React logo"
+                class="img-fluid mb-3"
+              />
+            </div>
+            <div class="col-2">
+              <img
+                src="/icon/flexbox.png"
+                alt="Flexbox logo"
+                class="img-fluid mb-3"
+              />
+            </div>
+            <div class="col-2">
+              <img src="/icon/seo.png" alt="SEO logo" class="img-fluid mb-3" />
+            </div>
+            <div class="col-2">
+              <img
+                src="/icon/responsive.png"
+                alt="Responsive logo"
+                class="img-fluid mb-3"
+              />
+            </div>
           </div>
         </div>
       </div>
