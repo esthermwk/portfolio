@@ -67,13 +67,27 @@
         max-width: 100%;
         max-height: 100%;
         height: 400px;
-        width: 420px;
+        width: 400px;
         display: block;
       }
       p {
         text-align: left;
         font-family: var(--text-font);
         font-size: 20px;
+      }
+
+      .navigation-link {
+        font-family: var(--title-font);
+        background: var(--secondary-color);
+        box-shadow: var(--box-shadow);
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        padding: 20px 15px;
+      }
+      .navigation-link:hover {
+        color: var(--secondary-color);
+        background: white;
       }
       @media (max-width: 900px) {
         .hero {
@@ -123,7 +137,7 @@
       <h1 class="text-center mt-2 mb-5">About Me</h1>
     </div>
     <div class="container text-center mt-5">
-      <div class="row">
+      <div class="row mb-5">
         <div class="col-lg-6">
           <img
             src="esther.jpg"
@@ -133,12 +147,20 @@
         </div>
         <div class="col-lg-6">
           <p>
-            Hi! I'm Esther Mak. An aspiring frontend developer and designer from
+            Hi! I'm Esther, an aspiring frontend developer and designer from
             Hong Kong, currently doing a Master's degree in Interaction Design
             in Estonia.<br /><br />Before pivoting my career in the tech field,
-            I worked in NGOs and government organization as event organizer and
-            social media manager.
+            I worked in NGOs and government organization as project coordinator
+            and social media manager.<br /><br />From event planning to web
+            design, my philosophy is the same - human-centredness. I believe
+            that good design not only can improve people's lives, but also
+            bringing users' a particular emotion, idea, or memory in their
+            mind.<br /><br />When I'm not coding, I'm either on the way to
+            cinema / theatre / library / gym room / travel!
           </p>
+          <div class="mt-5 mb-5">
+            <a href="#" alt="Learn more" class="navigation-link">My work</a>
+          </div>
         </div>
       </div>
     </div>
